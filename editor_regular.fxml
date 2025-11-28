@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<GridPane hgap="10" vgap="10" xmlns="http://javafx.com/javafx"
+          xmlns:fx="http://javafx.com/fxml"
+          fx:controller="com.company.lab5.controllers.EditorController">
+    <Label text="Название:" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+    <TextField fx:id="name" promptText="Введите название" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+
+    <Label text="Цена:" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+    <TextField fx:id="price" promptText="0.00" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+
+    <HBox spacing="10" GridPane.rowIndex="2" GridPane.columnSpan="2">
+        <Button fx:id="saveBtn" text="Сохранить" onAction="#onSave"/>
+        <Button text="Отмена" onAction="#onCancel"/>
+    </HBox>
+</GridPane>
